@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScoreActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/keyboard_bg"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="38dp"
+            android:text="Score: 0"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#5DC4B6">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="Mots trouves"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:padding="10dp"/>
+                <TextView
+                    android:id="@+id/nbMotsTrouves"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="80dp"
+                    android:padding="8dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#EBF0F1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6C6E70"
+                    android:text="Mots passes"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:padding="10dp"/>
+                <TextView
+                    android:id="@+id/nbMotsPasser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6C6E70"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="80dp"
+                    android:padding="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#E5E5E5">
+            <TextView
+                android:id="@+id/touvesRatioBar"
+                android:layout_width="100px"
+                android:layout_height="match_parent"
+                android:background="#636E73"/>
+            <TextView
+                android:id="@+id/touvesRatioText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0% de mots trouves"
+                android:textColor="#fff"
+                android:textSize="27dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Rejouer"
+                android:layout_gravity="bottom"
+                android:onClick="rejouerBtnClick"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Accueil"
+                android:layout_gravity="bottom"
+                android:onClick="AccueilBtnClick"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

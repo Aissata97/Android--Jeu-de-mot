@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitre"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/tvTitreAlertDialog"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Voici les règles du jeu"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/tvTexte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="- Le but du jeu est de deviner le maximum de mot en une minute (60 secondes). ! \n- Au début du jeu il y' a un préfixe du mot a déviner, Vous devez le compléter ! \n - Tu as plusieurs possibilités de réponse (exemple: bonjour, bonheur, bonhomme etc... si le préfixe du mot est 'bon' ). \n - Plus le mot est long plus tu gagnes des points \n -Tu as le choix de passer au mot suivant si tu veux mais chaque mots passé te fera perdre des points \n - Ton score sera calculé en fonction du nombre de mots trouvé et du nombre de mots passés
+                        "
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnQuitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorBtnQuitter"
+            android:fontFamily="monospace"
+            android:text="QUITTER"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnCommencer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorBtnCommencer"
+            android:fontFamily="monospace"
+            android:text="COMMENCER"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+</LinearLayout>

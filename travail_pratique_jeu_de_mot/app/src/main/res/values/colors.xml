@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- Couleurs ajoutées par moi -->
+    <color name="Orchidee">#da70d6</color>
+    <color name="mauve">#d473d4</color>
+    <color name="lilas">#b666d2</color>
+    <color name="lavande">#9683ec</color>
+    <color name="pourpreMoyen">#9370db</color>
+    <color name="heliotrope">#df73ff</color>
+    <color name="tvTitreAlertDialog">#9370db</color>
+    <color name="colorBtnCommencer">#1fa055</color>
+    <color name="colorBtnQuitter">#47564e</color>
+
+
+</resources>
